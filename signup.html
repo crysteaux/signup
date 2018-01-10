@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" name="description" content="Signup yo!">
+    <title>Signup sheet</title>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+  </head>
+  <body>
+  <img src="logo.png" alt="logo">
+
+  <form class="info" action="/signup/" method="post">
+  	<fieldset>
+  		<p>Sign Up</p>
+
+  		<label for="email">Email</label>
+  		<input placeholder="foo@bar.com" type="email" name="email" id="email" pattern="[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/>
+
+  		<label for="password">Password</label>
+  		<input placeholder="1234passw0rd" pattern="[a-z0-9][0-9]" type="password" name="password" id="password" required/>
+
+  	<button type='submit'>Submit</button>
+		<a href="/forgot-password/new">Forgot password?</a>
+  	</fieldset>
+  
+  </form>
+
+  	<p class="Already">Already have an account? <a href="/login">Login</a></p>
+  </body>
+</html>
+
