@@ -8,12 +8,12 @@
   <body>
   <img src="logo.png" alt="logo">
 
-  <form class="info" action="/signup/" method="post">
+  <form role="form" class="info" action="/signup/" accept-charset="UTF-8" method="post">
   	<fieldset>
   		<p>Sign Up</p>
 
-  		<label for="email">Email</label>
-  		<input placeholder="foo@bar.com" type="email" name="email" id="email" pattern="[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/>
+  		<label for="user-email">Email</label>
+  		<input placeholder="foo@bar.com" type="user-email" name="user-email" id="user-email" pattern="[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/>
 
   		<label for="password">Password</label>
   		<input placeholder="1234passw0rd" pattern="[a-z0-9][0-9]" type="password" name="password" id="password" required/>
@@ -24,7 +24,10 @@
   
   </form>
 
+<footer>
   	<p class="Already">Already have an account? <a href="/login">Login</a></p>
+  </footer>
+
   </body>
 </html>
 
